@@ -3,62 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - CAIS</title>
+    <title>Dashboard Akademik - CAIS</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; }
-        nav { background-color: #1e3a8a; padding: 15px 30px; display: flex; gap: 20px; }
-        nav a { color: white; text-decoration: none; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        .container { max-width: 1000px; margin: 30px auto; padding: 20px; }
-        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 20px; }
-        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-left: 5px solid #1e3a8a; }
-        .card h3 { margin: 0 0 10px; color: #555; font-size: 16px; }
-        .card p { margin: 0; font-size: 28px; font-weight: bold; color: #1e3a8a; }
-        .info-box { background: white; padding: 20px; border-radius: 8px; margin-top: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    </style>
 </head>
 <body>
 
-    <nav>
-        <a href="../index.html">Beranda</a>
-        <a href="login.html">Login</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="mahasiswa.html">Data Mahasiswa</a>
+    <!-- Navigasi Utama -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-brand">
+            🎓 CAIS Portal
+        </a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="mahasiswa.html">Data Mahasiswa</a></li>
+        </ul>
     </nav>
 
     <div class="container">
-        <h1>Dashboard Akademik CAIS</h1>
-        <p>Ringkasan data dan statistik akademik Semester 7 Tahun Ajaran 2026/2027.</p>
+        <div class="page-header">
+            <h1><span id="greetingText">Dashboard</span> Akademik</h1>
+            <p>Ringkasan data, statistik perkuliahan, dan pengumuman akademik Semester 7 Tahun Ajaran 2026/2027.</p>
+        </div>
 
-        <div class="cards">
-            <div class="card">
+        <!-- Ringkasan Statistik Akademik -->
+        <div class="stat-cards">
+            <div class="stat-card">
                 <h3>Total Mahasiswa Aktif</h3>
-                <p>142</p>
+                <div class="stat-number">142</div>
             </div>
-            <div class="card">
+            <div class="stat-card">
                 <h3>Mata Kuliah Semester Ini</h3>
-                <p>6</p>
+                <div class="stat-number">6</div>
             </div>
-            <div class="card">
+            <div class="stat-card">
                 <h3>Rata-Rata IPK</h3>
-                <p>3.68</p>
+                <div class="stat-number">3.68</div>
             </div>
-            <div class="card">
+            <div class="stat-card">
                 <h3>Total SKS Diambil</h3>
-                <p>20 SKS</p>
+                <div class="stat-number">20 SKS</div>
             </div>
         </div>
 
-        <div class="info-box">
+        <!-- Pengumuman Akademik -->
+        <div class="content-box">
             <h2>Pengumuman Akademik Terbaru</h2>
-            <ul>
-                <li><strong>Pelaksanaan UTS:</strong> 12 November 2026 - Praktikum Collaborative Computing.</li>
-                <li><strong>Batas Pengisian KRS Susulan:</strong> 20 November 2026 melalui portal CAIS.</li>
-                <li><strong>Evaluasi Tengah Semester:</strong> Seluruh mahasiswa wajib memastikan status keaktifan pada menu Data Mahasiswa.</li>
+            <ul class="announcement-list">
+                <li>
+                    <span class="announcement-tag tag-urgent">PENTING</span>
+                    <strong>Pelaksanaan UTS Semester 7:</strong> Mulai tanggal 12 November 2026 untuk mata kuliah Praktikum Collaborative Computing.
+                </li>
+                <li>
+                    <span class="announcement-tag tag-notice">PERHATIAN</span>
+                    <strong>Batas Pengisian & Revisi KRS:</strong> Maksimal 20 November 2026 melalui portal akademik CAIS.
+                </li>
+                <li>
+                    <span class="announcement-tag tag-info">INFO</span>
+                    <strong>Verifikasi Data Mahasiswa:</strong> Seluruh mahasiswa diwajibkan memeriksa kelengkapan identitas di menu 
+                    <a href="mahasiswa.html" style="color: var(--secondary-color); font-weight: 600;">Data Mahasiswa</a>.
+                </li>
             </ul>
         </div>
+
+        <!-- Jadwal Kuliah Ringkas -->
+        <div class="content-box">
+            <h2>Jadwal Perkuliahan Hari Ini</h2>
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Waktu</th>
+                            <th>Kode MK</th>
+                            <th>Mata Kuliah</th>
+                            <th>Ruangan</th>
+                            <th>Dosen Pengampu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00 - 10:30</td>
+                            <td>SI-701</td>
+                            <td>Collaborative Academic Information Systems</td>
+                            <td>Lab Komputer 3</td>
+                            <td>Tim Dosen CAIS</td>
+                        </tr>
+                        <tr>
+                            <td>13:00 - 15:30</td>
+                            <td>SI-704</td>
+                            <td>Manajemen Proyek TI</td>
+                            <td>R. Kuliah 402</td>
+                            <td>Dr. Ir. Hendra, M.Kom.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 <strong>UTS CAIS - Kelas A Semester 7</strong> | Kelompok 1</p>
+    </footer>
 
     <script src="../js/app.js"></script>
 </body>
