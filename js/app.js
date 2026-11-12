@@ -144,3 +144,4 @@ function updateGreeting() {
 
     greetingEl.textContent = salam;
 }
+
