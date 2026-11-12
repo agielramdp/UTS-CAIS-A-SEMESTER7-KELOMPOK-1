@@ -1,5 +1,4 @@
-# Prototype CAIS (Campus Academic Information System) - Kelompok 1
-
+# Collaborative Academic Information System (CAIS) - Kelompok 1
 Repository proyek pengembangan prototype frontend sistem informasi akademik kampus secara paralel dan kolaboratif untuk evaluasi UTS CAIS Kelas A Semester 7.
 
 ---
