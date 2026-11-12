@@ -6,10 +6,10 @@ Tuliskan penjelasan singkat mengenai fungsi utama aplikasi yang dibuat oleh kelo
 ## Anggota Kelompok & Pembagian Modul
 | No | Nama Anggota | NIM | Modul yang Dikerjakan |
 | :--- | :--- | :--- | :--- |
-| 1 | Nama Ketua | 12345678 | Halaman Utama (`index.html`) & Konfigurasi |
-| 2 | Nama Anggota 2 | 12345679 | Modul Login & Register (`pages/login.html`) |
-| 3 | Nama Anggota 3 | 12345680 | Modul Dashboard (`pages/dashboard.html`) |
-| 4 | Nama Anggota 4 | 12345681 | Styling Global (`css/style.css`) & Validasi (`js/app.js`) |
+| 1 | Agiel Ramadhan Putra | 11523001 | Halaman Utama (`index.html`) & Konfigurasi |
+| 2 | Muhammad Faiz Hanifah | 11523066 | Modul Login & Register (`pages/login.html`) |
+| 3 | MUHAMAD YUSUF | 11523009 | Modul Dashboard (`pages/dashboard.html`) |
+| 4 | Muhamad Rizki Saputra | 11523051 | Styling Global (`css/style.css`) & Validasi (`js/app.js`) |
 
 ## Cara Menjalankan Proyek
 1. Clone repository ini ke komputer lokal:
